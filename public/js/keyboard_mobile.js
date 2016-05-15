@@ -5,7 +5,7 @@ var mc = new Hammer(myElement1);
     mc.get('pan').set({ direction: Hammer.DIRECTION_ALL, threshold: 50 });
     // listen to events...
     mc.on("tap press", function(ev) {
-        myElement1.textContent = ev.type +" gesture detected.";
+        myElement1.querySelector(".txt").textContent = ev.type+" gesture detected.";
         if(!ev.isFinal) return;
         if(ev.type == 'tap')
             counts["promyelo"]++;
@@ -19,7 +19,7 @@ var mc = new Hammer(myElement1);
     mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
     // listen to events...
     mc.on("tap press", function(ev) {
-        myElement2.textContent = ev.type +" gesture detected.";
+        myElement2.querySelector(".txt").textContent = ev.type+" gesture detected.";
         if(!ev.isFinal) return;
         if(ev.type == 'tap')
             counts["myelo"]++;
@@ -35,7 +35,7 @@ var mc = new Hammer(myElement1);
     mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
     // listen to events...
     mc.on("tap press", function(ev) {
-        myElement3.textContent = ev.type +" gesture detected.";
+        myElement3.querySelector(".txt").textContent = ev.type+" gesture detected.";
         if(!ev.isFinal) return;
         if(ev.type == 'tap')
             counts["meta"]++;
@@ -51,7 +51,7 @@ var mc = new Hammer(myElement1);
     mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
     // listen to events...
     mc.on("tap press", function(ev) {
-        myElement4.textContent = ev.type +" gesture detected.";
+        myElement4.querySelector(".txt").textContent = ev.type+" gesture detected.";
         if(!ev.isFinal) return;
         if(ev.type == 'tap')
             counts["neut"]++;
