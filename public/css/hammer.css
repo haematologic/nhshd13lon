@@ -1,0 +1,40 @@
+.element {
+  background: silver;
+  height: 300px;
+  text-align: center;
+  font: 30px/300px Helvetica, Arial, sans-serif;
+  width:18.5%;
+  transition: all 0.05s ease;
+}
+
+.narrow {
+  width:13%
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.Result {
+    height: 20%;
+    width:100%;
+    margin:auto;
+}
+
+.colour-change{
+    background-color: yellow !important;
+}
+
+.colour-rotate{
+    filter: hue-rotate(90deg);
+}
+
+.bg1, .green { background: #42d692; }
+.bg2, .blue { background: #4986e7; }
+.bg3, .red { background: #d06b64; }
+.bg4, .purple { background: #cd74e6; }
+.bg5, .azure { background: #9fe1e7; }
